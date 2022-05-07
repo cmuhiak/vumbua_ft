@@ -1,0 +1,136 @@
+<h1>Vumbua - Sign up</h1>
+<form [formGroup]="registrationForm"
+      (ngSubmit)="registerUser()" 
+      class= "controles-container">
+
+      <mat-form-field>
+        <input
+        type="number"
+        matInput placeholder="Register as a User"
+        name="role"
+        formControlName="role"
+      />
+      </mat-form-field>      
+  
+  <mat-form-field>
+    <input
+    type="text"
+    matInput placeholder="First Name"
+    name="name"
+    formControlName="name"
+  />
+  </mat-form-field>
+ 
+  <br />
+
+  <mat-form-field>
+    <input
+    type="phone"
+    name=""
+    matInput placeholder="Enter Phone Number"
+    name="phone"
+    formControlName="phone"
+  />
+  </mat-form-field>
+  
+  <br />
+  <mat-form-field>
+    <input
+    type="email"
+    name="email"
+    matInput placeholder="Email Address"
+    formControlName="email"
+  />
+  </mat-form-field>
+  
+  <br />
+  <mat-form-field>
+    <input
+    type="number"
+    name="id"
+    matInput placeholder="ID Number"
+    formControlName="id"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="text"
+    name="pin"
+    matInput placeholder="Enter Pin Number"
+    formControlName="pin"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="date"
+    name="dob"
+    matInput placeholder="Date of Birth"
+    formControlName="dob"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="text"
+    name="gender"
+    matInput placeholder="Gender"
+    formControlName="gender"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="text"
+    name="occupation"
+    matInput placeholder="Occupation"
+    formControlName="occupation"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="password"
+    name="password"
+    matInput placeholder="Enter password"
+    formControlName="password"
+  />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field>
+    <input
+    type="password"
+    name="confirmPassword"
+    matInput placeholder="Confirm password"
+    formControlName="confirmPassword"
+  />
+  </mat-form-field>
+  <br />
+
+
+
+  <!-- <pre>
+        {{ registrationForm.value | json }}
+    </pre
+  > -->
+  
+<button class="submitButton" mat-raised-button >Submit</button>
+</form>
+
+<table>
+  <tr>
+    <td>UserName</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let item of users"> 
+    <td>{{item.name}}</td>
+    <td>{{item.email}}</td>
+  </tr>
+</table>

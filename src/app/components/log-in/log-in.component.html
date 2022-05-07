@@ -1,0 +1,43 @@
+
+  <h1>Vumbua - Sign in</h1>
+
+  <form [formGroup]="logInForm"
+  (ngSubmit)="loginUser()"
+  class="Loginbox"
+  >
+
+  <mat-form-field>
+    <input
+    type="text"
+    matInput placeholder="Log-in as a User"
+    name="role"
+    formControlName="role"
+  />
+  </mat-form-field> 
+
+  <mat-form-field>
+      <input type="text"
+    name="pin" 
+    matInput placeholder="Enter UserName/Email"
+    formControlName="pin" />
+
+  </mat-form-field>
+  <br/>
+
+
+<mat-form-field>
+    <input 
+    type="password" 
+    name="password" 
+    matInput placeholder="Enter Password"
+    formControlName="password"
+    />
+  </mat-form-field>
+<br/>
+
+   <button class="submitButton" mat-raised-button>Submit</button>
+   <br/>
+    <a href="#">Forgot password? Reset here.</a> <br />
+    <a href="#">First time user? Register here.</a>
+  </form>
+

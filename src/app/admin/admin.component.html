@@ -1,0 +1,49 @@
+<mat-sidenav-container class = "tp-container">
+    <mat-sidenav mode = "side" opened>
+       <section class = "tp-section">
+          <span><button mat-raised-button>My Ideas</button></span>
+       </section>
+       <section class = "tp-section">
+          <span><button mat-raised-button>Posted Ideas</button></span>
+       </section>
+       <section class = "tp-section">
+         <a routerLink="/companyideas"><span><button mat-raised-button>Company Ideas</button></span></a>
+      </section>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class = "toolbar">
+            <span>
+               <a routerLink="/admin/interface"> <button><mat-icon>home</mat-icon></button></a>
+            </span>
+            <span class = "filler"></span>
+            <nav>
+                <a routerLink="/UserIdea">
+                    <button>
+                    <mat-icon>add_circle</mat-icon>
+                    </button>
+                </a>
+                <a routerLink="/LogIn"><button><mat-icon>account_circle</mat-icon>
+                </button></a>
+            </nav>
+         </mat-toolbar>
+
+         
+         <table>
+             <tr>
+                 <th>Full Name</th>
+                 <th>User Pin</th>
+                 <th>Phone Number</th>
+                 <th>Email Address</th>
+                 <th>View</th>
+             </tr>
+             <tr *ngFor="let item of users"> 
+                <td>{{item.name}}</td>
+                <td>{{item.pin}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.email}}</td>
+                <td><button mat-raised-button>View</button></td>
+            </tr>
+         
+         </table>
+    </mat-sidenav-content>
+ </mat-sidenav-container>

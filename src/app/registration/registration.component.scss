@@ -1,0 +1,20 @@
+
+body{
+    text-align: center;
+    color: darkblue;
+}
+
+.controles-container{
+    width:70%;
+    padding:5%;
+}
+
+.controles-container > * {
+    width:70%;
+}
+.submitButton {
+    width:10%;
+    padding:-5%;
+    align-items: center;
+    position: 50%;
+}

@@ -1,0 +1,33 @@
+
+body{
+    text-align: center;
+    color: darkblue;
+}
+
+.Loginbox{
+    width: 60%;
+    padding:5%;
+}
+
+.Loginbox > * {
+    width:60%;
+}
+.submitButton {
+    width:10%;
+    padding:-5%;
+    align-items: center;
+    position: 50%;
+}
+
+.Loginbox a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: red;
+    
+}
+
+.Loginbox a:hover
+{
+    color:rgb(4, 9, 54);
+}

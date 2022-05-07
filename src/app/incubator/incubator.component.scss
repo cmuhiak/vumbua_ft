@@ -1,0 +1,68 @@
+.tp-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+ }
+ .tp-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    width:150px;   
+
+ }
+
+ .filler {
+    flex: 1 1 auto;
+ }
+ .gap {
+    margin-right: 10px;
+ }
+ .toolbar {
+     color: yellow;
+     background-color: rgb(4, 9, 54);
+    
+ }
+
+ table {
+    font-family: garamond, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td{
+    border: 1px solid rgb(4, 9, 54);
+    text-align: left;
+    padding: 8px;
+    font-size: 18px;
+}
+   th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(4, 9, 54);
+    color: yellow;
+    font-size: 20px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: white;}
+
+    .mat-raised-button{
+        background-color: rgb(4, 9, 54);
+        color: yellow;
+        margin-left: 8px;
+        border-color: white;
+    }
+    .upbar{
+        background-color: rgb(228, 97, 21);
+        color: yellow;
+        margin-left: 8px;
+        border-color: white;
+        
+    }
+    

@@ -1,0 +1,29 @@
+<body>
+  <h4>Add User Role</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>User Role</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let role of roles" [value]="role.value">
+        {{role.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br/>
+  <input type="text" [(ngModel)]="role" matInput placeholder="Role"/>
+  <button mat-button (click)="postData()"> Submit Role</button> <br> 
+  <!-- You have successfully added a role {{result!}} <br> -->
+
+<button mat-button > Display User Roles</button>
+
+<table>
+  <tr>
+    <td>Role id</td>
+    <td>Role</td>
+  </tr>
+  <tr *ngFor="let item of users"> 
+    <td>{{item.role_id}}</td>
+    <td>{{item.user}}</td>
+  </tr>
+</table>
+</body>
+
